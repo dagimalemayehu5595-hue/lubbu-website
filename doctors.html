@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LUBBU Specialized Medical &amp; MCH Center | Addis Ababa</title>
-  <meta name="description" content="LUBBU is a tertiary-level, multi-specialty medical and maternal &amp; child health center in Saris Adey Abeba, Addis Ababa: 24/7 emergency, labor &amp; delivery, NICU and 20+ specialists." />
+  <title>Our doctors | LUBBU Specialized Medical &amp; MCH Center</title>
+  <meta name="description" content="Meet the 26 consultants, subspecialists and general practitioners at LUBBU Specialized Medical &amp; MCH Center in Addis Ababa." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,7 +77,7 @@
       <nav class="menu" id="menu" aria-label="Main">
         <a href="about.html">About</a>
         <a href="specialties.html">Specialties</a>
-        <a href="doctors.html">Doctors</a>
+        <a href="doctors.html" aria-current="page">Doctors</a>
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
         <a href="gallery.html">Gallery</a>
@@ -92,141 +92,55 @@
   <!-- /SHARED header -->
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="chip reveal">Tertiary-level · Multi-specialty · Addis Ababa</span>
-          <h1 class="reveal">We care for the <span class="grad">whole family.</span></h1>
-          <p class="lead reveal">Wellness and healing, close to home. At LUBBU you're more than a patient. You're a person, a neighbor and a friend. Expert care for everyone planning, starting and raising a family.</p>
-          <div class="hero-actions reveal">
-            <a href="appointment.html" class="btn btn-primary">Book an appointment <svg class="ico"><use href="#i-arrow"/></svg></a>
-            <a href="tel:0906000111" class="btn btn-ghost"><svg class="ico"><use href="#i-siren"/></svg> Emergency line</a>
-          </div>
-          <ul class="stats reveal">
-            <li><strong data-count="20" data-suffix="+">20+</strong><span>Specialists &amp; subspecialists</span></li>
-            <li><strong>24/7</strong><span>Emergency &amp; delivery</span></li>
-            <li><strong data-count="8">8</strong><span>Medical specialties</span></li>
-            <li><strong data-count="2">2</strong><span>Operating theatres</span></li>
-          </ul>
-        </div>
-
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="ring ring-1"></div>
-          <div class="ring ring-2"></div>
-          <div class="core">
-            <svg class="core-heart"><use href="#i-heart"/></svg>
-          </div>
-          <div class="float-card fc-1">
-            <span class="fc-ico"><svg><use href="#i-pulse"/></svg></span>
-            <div><b>Vitals monitoring</b><small>Live · ICU &amp; NICU</small></div>
-          </div>
-          <div class="float-card fc-2">
-            <span class="fc-ico"><svg><use href="#i-baby"/></svg></span>
-            <div><b>Painless delivery</b><small>Dedicated C-section OT</small></div>
-          </div>
-          <div class="float-card fc-3">
-            <span class="fc-ico"><svg><use href="#i-shield"/></svg></span>
-            <div><b>Affordable care</b><small>Packages &amp; discounts</small></div>
-          </div>
-          <svg class="ecg" viewBox="0 0 600 120" preserveAspectRatio="none">
-            <path d="M0 60 H160 L180 60 L195 30 L210 95 L228 10 L246 108 L262 60 H360 L375 48 L390 60 H600" />
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
-        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
-      </div>
-    </div>
-
-    <!-- ABOUT TEASER -->
-    <section class="section">
-      <div class="container about-grid">
-        <div class="reveal">
-          <span class="eyebrow">About LUBBU</span>
-          <h2>Specialist care, founded by specialists.</h2>
-          <p>LUBBU is a multi-specialty medical center that brings maternal &amp; child health together with internal medicine under one roof. Founded by experienced specialist doctors, we deliver tertiary-level outpatient and inpatient care at an affordable cost, with innovative packages and discounts.</p>
-          <ul class="checks">
-            <li><svg class="ico"><use href="#i-check"/></svg>State-of-the-art diagnostic &amp; treatment equipment</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Two fully equipped operating theatres, one dedicated to C-sections</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Painless delivery, Neonatal ICU and chemotherapy services</li>
-          </ul>
-          <a class="view-all" href="about.html">View all about us <svg class="ico"><use href="#i-arrow"/></svg></a>
-        </div>
-        <figure class="about-photo reveal">
-          <img src="assets/photos/building.jpg" alt="The LUBBU Specialized Medical &amp; MCH Center building" width="1920" height="1207" loading="lazy" decoding="async" />
-        </figure>
-      </div>
-    </section>
-
-    <!-- FEATURED SERVICES -->
-    <section class="section section-alt">
+    <section class="page-hero">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Services · around the clock</span>
-          <h2>Open when you need us. <span class="grad">24/7.</span></h2>
-          <p>From emergencies to the first days of a newborn's life, our core services run day and night.</p>
-        </div>
-        <div class="svc-grid svc-grid-4">
-          <article class="svc-card reveal" id="emergency-care">
-            <div class="svc-media"><img src="assets/services/emergency-care.jpg" alt="Emergency room beds with privacy curtains and a monitoring cart" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-siren"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Emergency Care</h3>
-              <p>24/7 emergency care for adults and children.</p>
-              <a class="svc-link" href="services.html#emergency-care">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-          <article class="svc-card reveal" id="labor-delivery">
-            <div class="svc-media"><img src="assets/services/labor-delivery.jpg" alt="A delivery bed in a LUBBU birthing suite" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-baby"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Labor &amp; Delivery</h3>
-              <p>Birthing suites and private maternity rooms, supported around the clock.</p>
-              <a class="svc-link" href="services.html#labor-delivery">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-          <article class="svc-card reveal" id="neonatal-icu">
-            <div class="svc-media"><img src="assets/services/neonatal-icu.jpg" alt="Incubators and radiant warmers in the LUBBU neonatal ICU" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-incubator"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Neonatal ICU</h3>
-              <p>Level III intensive care for newborns who need extra support.</p>
-              <a class="svc-link" href="services.html#neonatal-icu">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-          <article class="svc-card reveal" id="operation-theatre">
-            <div class="svc-media"><img src="assets/services/operation-theatre.jpg" alt="A LUBBU operating room with an operating table, surgical lights and anesthesia machine" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-scalpel"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Operation Theatre</h3>
-              <p>Two independent operating rooms with modern anesthesia machines.</p>
-              <a class="svc-link" href="services.html#operation-theatre">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-        </div>
-        <div class="view-all-row reveal"><a class="view-all" href="services.html">View all services <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+        <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Doctors</span></nav>
+        <span class="eyebrow reveal">Our doctors</span>
+        <h1 class="reveal">Meet the specialists behind your care.</h1>
+        <p class="reveal">Consultants, subspecialists and general practitioners: 26 doctors working as one team.</p>
       </div>
     </section>
 
-    <!-- FEATURED DOCTORS -->
     <section class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Our doctors</span>
-          <h2>Meet some of our specialists.</h2>
-          <p>26 consultants, subspecialists and general practitioners working as one team.</p>
+        <div class="filters reveal" role="tablist" aria-label="Filter doctors">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="medicine" role="tab" aria-selected="false">Internal medicine</button>
+          <button class="filter" data-filter="mch" role="tab" aria-selected="false">Mother &amp; child</button>
+          <button class="filter" data-filter="surgery" role="tab" aria-selected="false">Surgery &amp; anesthesia</button>
+          <button class="filter" data-filter="diagnostics" role="tab" aria-selected="false">Diagnostics</button>
+          <button class="filter" data-filter="general" role="tab" aria-selected="false">General practice</button>
         </div>
-        <div class="doctors doctors-featured">
+        <!-- To add a doctor's photo: save it as assets/doctors/first-last.jpg (square works best)
+             and put that path in the doctor's data-photo="" attribute. Initials show until then. -->
+        <div class="doctors">
           <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/shimelis-legesse.jpg"><span class="doc-badge">CEO</span><span class="avatar has-photo"><span class="initials" aria-hidden="true">SL</span><img src="assets/doctors/shimelis-legesse.jpg" alt="Dr Shimelis Legesse" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Legesse</h3><p>Internist &amp; CEO</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">TS</span></span><h3>Dr Tigist Sileshi</h3><p>Internist – Cardiologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">DT</span></span><h3>Dr Demu Tesfaye</h3><p>Consultant Internist &amp; Cardiologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">LG</span></span><h3>Dr Lalise Gemachu</h3><p>Internist – Hematologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">LB</span></span><h3>Dr Limi Basha</h3><p>Internist, Diabetes &amp; Endocrinologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/adugna-fekadu.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">AF</span><img src="assets/doctors/adugna-fekadu.jpg" alt="Dr Adugna Fekadu" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Adugna Fekadu</h3><p>Consultant Oncologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">DM</span></span><h3>Dr Dereje Melka</h3><p>Neurologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/lishan-demera.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">LD</span><img src="assets/doctors/lishan-demera.jpg" alt="Dr Lishan Demera" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Lishan Demera</h3><p>Dermato-Venereologist</p></article>
+          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/selam-nigussie.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SN</span><img src="assets/doctors/selam-nigussie.jpg" alt="Dr Selam Nigussie" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Selam Nigussie</h3><p>Psychiatrist</p></article>
           <article class="doc reveal" data-cat="mch" data-photo="assets/doctors/jalel-hundesa.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">JH</span><img src="assets/doctors/jalel-hundesa.jpg" alt="Dr Jalel Hundesa" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Jalel Hundesa</h3><p>Obstetrician &amp; Gynecologist</p></article>
           <article class="doc reveal" data-cat="mch" data-photo="assets/doctors/selam-bisrat.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SB</span><img src="assets/doctors/selam-bisrat.jpg" alt="Dr Selam Bisrat" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Selam Bisrat</h3><p>Pediatrician</p></article>
-          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/adugna-fekadu.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">AF</span><img src="assets/doctors/adugna-fekadu.jpg" alt="Dr Adugna Fekadu" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Adugna Fekadu</h3><p>Consultant Oncologist</p></article>
+          <article class="doc reveal" data-cat="mch" data-photo="assets/doctors/abenezer-chala.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">AC</span><img src="assets/doctors/abenezer-chala.jpg" alt="Dr Abenezer Chala" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Abenezer Chala</h3><p>Pediatrician</p></article>
           <article class="doc reveal" data-cat="surgery" data-photo="assets/doctors/shimelis-nigussie.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SN</span><img src="assets/doctors/shimelis-nigussie.jpg" alt="Dr Shimelis Nigussie" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Nigussie</h3><p>Hepatobiliary Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery" data-photo="assets/doctors/elsa-daniel.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">ED</span><img src="assets/doctors/elsa-daniel.jpg" alt="Dr Elsa Daniel" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Elsa Daniel</h3><p>Orthopedic Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery" data-photo="assets/doctors/mizen-yeshaw.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">MY</span><img src="assets/doctors/mizen-yeshaw.jpg" alt="Dr Mizen Yeshaw" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Mizen Yeshaw</h3><p>ENT Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery" data-photo="assets/doctors/seyfe-bekele.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SB</span><img src="assets/doctors/seyfe-bekele.jpg" alt="Dr Seyfe Bekele" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Seyfe Bekele</h3><p>Urologist</p></article>
+          <article class="doc reveal" data-cat="surgery" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">MA</span></span><h3>Dr Muna Abera</h3><p>Anesthesiologist</p></article>
           <article class="doc reveal" data-cat="diagnostics" data-photo="assets/doctors/netsanet-abraham.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">NA</span><img src="assets/doctors/netsanet-abraham.jpg" alt="Dr Netsanet Abraham" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Netsanet Abraham</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics" data-photo="assets/doctors/andargachew-kaleab.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">AK</span><img src="assets/doctors/andargachew-kaleab.jpg" alt="Dr Andargachew Kaleab" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Andargachew Kaleab</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">ET</span></span><h3>Dr Etenesh Tewelde</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">AN</span></span><h3>Dr Alexander Napoleon</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">TJ</span></span><h3>Dr Taye Jemberu</h3><p>Pathologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">TY</span></span><h3>Dr Tewodros Yalew</h3><p>Pathologist</p></article>
+          <article class="doc reveal" data-cat="general" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">BA</span></span><h3>Dr Bemnet Alemu</h3><p>General Practitioner</p></article>
+          <article class="doc reveal" data-cat="general" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">KG</span></span><h3>Dr Kaleb Getaneh</h3><p>General Practitioner</p></article>
+          <article class="doc reveal" data-cat="general" data-photo=""><span class="avatar"><span class="initials" aria-hidden="true">HT</span></span><h3>Dr Habtamu Tamiru</h3><p>General Practitioner</p></article>
         </div>
-        <div class="view-all-row reveal"><a class="view-all" href="doctors.html">View all 26 doctors <svg class="ico"><use href="#i-arrow"/></svg></a></div>
       </div>
     </section>
 

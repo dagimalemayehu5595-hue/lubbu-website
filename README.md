@@ -4,30 +4,26 @@ A redesigned, mobile-friendly website for LUBBU Specialized Medical & MCH Center
 
 This is a **preview for client review** before it moves to the clinic's own domain and server.
 
-## What's included
+## Pages
 
-- Landing section with the clinic lobby photo, key stats and an animated heartbeat
-- About, vision, mission and core values
-- 8 specialties, 24/7 services and 8 health check-up packages
-- 26 doctors with category filters
-- Appointment request form (opens the visitor's email app, addressed to the clinic)
-- Contact details, live open/closed badge (Addis Ababa time), Google Map with directions
+| File | Contents |
+|---|---|
+| `index.html` | Home: hero, stats, about teaser, featured services, featured doctors |
+| `about.html` | Story, vision, mission, values, facility highlights |
+| `specialties.html` | The 8 specialties |
+| `doctors.html` | All 26 doctors with category filters |
+| `services.html` | Featured facilities, 11 services with photos and details, other services |
+| `packages.html` | The 8 check-up packages (each links to booking with the package pre-selected) |
+| `gallery.html` | Facility photo grid with a lightbox |
+| `appointment.html` | Booking form (`?package=cancer-screening` pre-selects a package) |
+| `contact.html` | Contact details, opening hours, map and directions |
+
+Shared files: `styles.css`, `script.js`, and `assets/` (logo, doctor headshots, facility and service photos). The header and footer are copied into every page between `<!-- SHARED -->` comments.
 
 ## Run it locally
 
 No build step. Open `index.html` in any browser.
 
-## Files
-
-| Path | Contents |
-|---|---|
-| `index.html` | Page content |
-| `styles.css` | Styles, including phone and tablet layouts |
-| `script.js` | Menu, animations, doctor filters, booking form |
-| `assets/` | Logo, doctor headshots and facility photos |
-
 ## Before going live
 
-- Replace the placeholder social links (Facebook, LinkedIn, Telegram) in the footer
-- Add photos for the 13 doctors currently shown with initials
-- Optionally connect the booking form to a backend so requests are stored, not just emailed
+See [TODO.md](TODO.md).

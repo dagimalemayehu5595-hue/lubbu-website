@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LUBBU Specialized Medical &amp; MCH Center | Addis Ababa</title>
-  <meta name="description" content="LUBBU is a tertiary-level, multi-specialty medical and maternal &amp; child health center in Saris Adey Abeba, Addis Ababa: 24/7 emergency, labor &amp; delivery, NICU and 20+ specialists." />
+  <title>Services | LUBBU Specialized Medical &amp; MCH Center</title>
+  <meta name="description" content="24/7 emergency care, operation theatres, labor &amp; delivery, Level III NICU, inpatient and outpatient care, imaging, laboratory, chemotherapy and pharmacy at LUBBU." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,7 +78,7 @@
         <a href="about.html">About</a>
         <a href="specialties.html">Specialties</a>
         <a href="doctors.html">Doctors</a>
-        <a href="services.html">Services</a>
+        <a href="services.html" aria-current="page">Services</a>
         <a href="packages.html">Packages</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
@@ -92,109 +92,50 @@
   <!-- /SHARED header -->
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="chip reveal">Tertiary-level · Multi-specialty · Addis Ababa</span>
-          <h1 class="reveal">We care for the <span class="grad">whole family.</span></h1>
-          <p class="lead reveal">Wellness and healing, close to home. At LUBBU you're more than a patient. You're a person, a neighbor and a friend. Expert care for everyone planning, starting and raising a family.</p>
-          <div class="hero-actions reveal">
-            <a href="appointment.html" class="btn btn-primary">Book an appointment <svg class="ico"><use href="#i-arrow"/></svg></a>
-            <a href="tel:0906000111" class="btn btn-ghost"><svg class="ico"><use href="#i-siren"/></svg> Emergency line</a>
-          </div>
-          <ul class="stats reveal">
-            <li><strong data-count="20" data-suffix="+">20+</strong><span>Specialists &amp; subspecialists</span></li>
-            <li><strong>24/7</strong><span>Emergency &amp; delivery</span></li>
-            <li><strong data-count="8">8</strong><span>Medical specialties</span></li>
-            <li><strong data-count="2">2</strong><span>Operating theatres</span></li>
-          </ul>
-        </div>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Services</span></nav>
+        <span class="eyebrow reveal">Services · around the clock</span>
+        <h1 class="reveal">Open when you need us. <span class="grad">24/7.</span></h1>
+        <p class="reveal">Emergency, maternity, surgery, diagnostics and inpatient care, all in one place.</p>
+      </div>
+    </section>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="ring ring-1"></div>
-          <div class="ring ring-2"></div>
-          <div class="core">
-            <svg class="core-heart"><use href="#i-heart"/></svg>
-          </div>
-          <div class="float-card fc-1">
-            <span class="fc-ico"><svg><use href="#i-pulse"/></svg></span>
-            <div><b>Vitals monitoring</b><small>Live · ICU &amp; NICU</small></div>
-          </div>
-          <div class="float-card fc-2">
-            <span class="fc-ico"><svg><use href="#i-baby"/></svg></span>
-            <div><b>Painless delivery</b><small>Dedicated C-section OT</small></div>
-          </div>
-          <div class="float-card fc-3">
-            <span class="fc-ico"><svg><use href="#i-shield"/></svg></span>
-            <div><b>Affordable care</b><small>Packages &amp; discounts</small></div>
-          </div>
-          <svg class="ecg" viewBox="0 0 600 120" preserveAspectRatio="none">
-            <path d="M0 60 H160 L180 60 L195 30 L210 95 L228 10 L246 108 L262 60 H360 L375 48 L390 60 H600" />
-          </svg>
+    <!-- FEATURED FACILITIES -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="svc-grid svc-featured">
+          <article class="svc-card svc-card-feature reveal">
+            <div class="svc-media"><img src="assets/services/deluxe-postnatal-room.jpg" alt="A mother holding her newborn in a LUBBU deluxe postnatal room, with a nurse beside her" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-tag">Featured facility</span></div>
+            <div class="svc-body"><h3>Deluxe Postnatal Room</h3><p>A private, comfortable room where mothers and newborns rest and recover after delivery.</p></div>
+          </article>
+          <article class="svc-card svc-card-feature reveal">
+            <div class="svc-media"><img src="assets/services/hi-tech-nicu.jpg" alt="Radiant warmers and incubators in the LUBBU neonatal intensive care unit" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-tag">Featured facility</span></div>
+            <div class="svc-body"><h3>Hi-Tech NICU</h3><p>Level III neonatal intensive care for newborns who need extra support.</p></div>
+          </article>
+          <article class="svc-card svc-card-feature reveal">
+            <div class="svc-media"><img src="assets/services/operation-theatre.jpg" alt="A LUBBU operating room with an operating table, surgical lights and anesthesia machine" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-tag">Featured facility</span></div>
+            <div class="svc-body"><h3>Operation Theatre</h3><p>Two independent operating rooms, one dedicated to C-sections.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
-        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
-      </div>
-    </div>
-
-    <!-- ABOUT TEASER -->
-    <section class="section">
-      <div class="container about-grid">
-        <div class="reveal">
-          <span class="eyebrow">About LUBBU</span>
-          <h2>Specialist care, founded by specialists.</h2>
-          <p>LUBBU is a multi-specialty medical center that brings maternal &amp; child health together with internal medicine under one roof. Founded by experienced specialist doctors, we deliver tertiary-level outpatient and inpatient care at an affordable cost, with innovative packages and discounts.</p>
-          <ul class="checks">
-            <li><svg class="ico"><use href="#i-check"/></svg>State-of-the-art diagnostic &amp; treatment equipment</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Two fully equipped operating theatres, one dedicated to C-sections</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Painless delivery, Neonatal ICU and chemotherapy services</li>
-          </ul>
-          <a class="view-all" href="about.html">View all about us <svg class="ico"><use href="#i-arrow"/></svg></a>
-        </div>
-        <figure class="about-photo reveal">
-          <img src="assets/photos/building.jpg" alt="The LUBBU Specialized Medical &amp; MCH Center building" width="1920" height="1207" loading="lazy" decoding="async" />
-        </figure>
-      </div>
-    </section>
-
-    <!-- FEATURED SERVICES -->
+    <!-- MAIN SERVICES -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Services · around the clock</span>
-          <h2>Open when you need us. <span class="grad">24/7.</span></h2>
-          <p>From emergencies to the first days of a newborn's life, our core services run day and night.</p>
+          <span class="eyebrow">Main services</span>
+          <h2>Everything your family needs, under one roof.</h2>
+          <p>Tap "Learn more" on any service for the details.</p>
         </div>
-        <div class="svc-grid svc-grid-4">
+        <div class="svc-grid">
           <article class="svc-card reveal" id="emergency-care">
             <div class="svc-media"><img src="assets/services/emergency-care.jpg" alt="Emergency room beds with privacy curtains and a monitoring cart" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-siren"/></svg></span></div>
             <div class="svc-body">
               <h3>Emergency Care</h3>
               <p>24/7 emergency care for adults and children.</p>
-              <a class="svc-link" href="services.html#emergency-care">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-          <article class="svc-card reveal" id="labor-delivery">
-            <div class="svc-media"><img src="assets/services/labor-delivery.jpg" alt="A delivery bed in a LUBBU birthing suite" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-baby"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Labor &amp; Delivery</h3>
-              <p>Birthing suites and private maternity rooms, supported around the clock.</p>
-              <a class="svc-link" href="services.html#labor-delivery">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </article>
-          <article class="svc-card reveal" id="neonatal-icu">
-            <div class="svc-media"><img src="assets/services/neonatal-icu.jpg" alt="Incubators and radiant warmers in the LUBBU neonatal ICU" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-incubator"/></svg></span></div>
-            <div class="svc-body">
-              <h3>Neonatal ICU</h3>
-              <p>Level III intensive care for newborns who need extra support.</p>
-              <a class="svc-link" href="services.html#neonatal-icu">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Open around the clock for adult and pediatric emergencies</li><li>4-bed emergency room with triage</li><li>Trauma bay</li><li>Dedicated cardiac area</li></ul></details>
             </div>
           </article>
           <article class="svc-card reveal" id="operation-theatre">
@@ -202,31 +143,103 @@
             <div class="svc-body">
               <h3>Operation Theatre</h3>
               <p>Two independent operating rooms with modern anesthesia machines.</p>
-              <a class="svc-link" href="services.html#operation-theatre">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Two independent operating rooms</li><li>One operating room dedicated to C-sections</li><li>Modern anesthesia machines</li><li>4-bed post-anesthesia care unit (PACU)</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="labor-delivery">
+            <div class="svc-media"><img src="assets/services/labor-delivery.jpg" alt="A delivery bed in a LUBBU birthing suite" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-baby"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Labor &amp; Delivery</h3>
+              <p>Birthing suites and private maternity rooms, supported around the clock.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Birthing suites</li><li>Private maternity rooms</li><li>24-hour anesthesia coverage</li><li>Obstetric operating theatre</li><li>NICU and nursery on site</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="outpatient-care">
+            <div class="svc-media"><img src="assets/services/outpatient-care.jpg" alt="A doctor at a desk in a LUBBU outpatient consultation room" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-steth"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Outpatient Care</h3>
+              <p>Specialist clinics for consultations, follow-up and day-care treatment.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>3 major specialties</li><li>15+ subspecialties</li><li>8 clinics</li><li>Day-care chemotherapy unit</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="inpatient-care">
+            <div class="svc-media"><img src="assets/services/inpatient-care.jpg" alt="A private inpatient room with a hospital bed, sofa and wall-mounted TV" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-bed"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Inpatient Care</h3>
+              <p>40 comfortable beds, most of them in private rooms.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>40 beds</li><li>65% private rooms, including 3 deluxe rooms</li><li>Every room is self-contained</li><li>TV, phone and internet in every room</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="neonatal-icu">
+            <div class="svc-media"><img src="assets/services/neonatal-icu.jpg" alt="Incubators and radiant warmers in the LUBBU neonatal ICU" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-incubator"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Neonatal ICU</h3>
+              <p>Level III intensive care for newborns who need extra support.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Level III NICU</li><li>6 beds</li><li>Phototherapy</li><li>Consultant pediatricians and neonatal nurses</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="preventive-care">
+            <div class="svc-media"><img src="assets/services/preventive-care.jpg" alt="Two LUBBU doctors smiling at a consultation desk" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-shield"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Preventive Care</h3>
+              <p>Check-ups, screenings and immunizations that catch problems early.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Health check-ups</li><li>Cancer screening</li><li>Cardiovascular screening</li><li>Infectious disease screening</li><li>Immunizations</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="radiology-imaging">
+            <div class="svc-media"><img src="assets/services/radiology-imaging.jpg" alt="A digital X-ray machine in the LUBBU radiology department" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-scan"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Radiology &amp; Imaging</h3>
+              <p>Digital X-ray and advanced ultrasound for fast, accurate diagnosis.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Digital X-ray with about 80% less radiation</li><li>3D/4D ultrasound</li><li>Doppler ultrasound and echocardiography</li><li>HSG and IVP</li><li>Image-guided biopsy</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="laboratory-pathology">
+            <div class="svc-media"><img src="assets/services/laboratory-pathology.jpg" alt="Microscopes and analyzers on the bench of the LUBBU laboratory" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-flask"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Laboratory &amp; Pathology</h3>
+              <p>A full in-house laboratory with analyzers linked to our lab information system.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Clinical chemistry and hematology</li><li>Cancer and cardiac markers</li><li>Thyroid function tests</li><li>Histopathology and cytology</li><li>Blood bank</li><li>LIS-interfaced analyzers</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="chemotherapy">
+            <div class="svc-media"><img src="assets/services/chemotherapy.jpg" alt="Treatment beds in the LUBBU chemotherapy unit" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-cell"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Chemotherapy</h3>
+              <p>Anti-cancer and supportive treatment in a dedicated, self-contained unit.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Anti-cancer treatment</li><li>Supportive treatment</li><li>Self-contained chemotherapy unit</li><li>Nurse pre-assessment before treatment</li></ul></details>
+            </div>
+          </article>
+          <article class="svc-card reveal" id="pharmacy">
+            <div class="svc-media"><img src="assets/services/pharmacy.jpg" alt="The entrance and counter of the LUBBU pharmacy" width="800" height="600" loading="lazy" decoding="async" /><span class="svc-ico"><svg><use href="#i-pill"/></svg></span></div>
+            <div class="svc-body">
+              <h3>Pharmacy</h3>
+              <p>Outpatient and inpatient pharmacy with affordable medication.</p>
+              <details class="svc-more"><summary><span>Learn more</span><svg class="ico"><use href="#i-plus"/></svg></summary><ul class="svc-list"><li>Outpatient (OPD) pharmacy</li><li>Inpatient pharmacy</li><li>Locally produced and imported medication</li><li>Affordable prices</li></ul></details>
             </div>
           </article>
         </div>
-        <div class="view-all-row reveal"><a class="view-all" href="services.html">View all services <svg class="ico"><use href="#i-arrow"/></svg></a></div>
       </div>
     </section>
 
-    <!-- FEATURED DOCTORS -->
+    <!-- OTHER SERVICES -->
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Our doctors</span>
-          <h2>Meet some of our specialists.</h2>
-          <p>26 consultants, subspecialists and general practitioners working as one team.</p>
+          <span class="eyebrow">Also available</span>
+          <h2>Other services &amp; facilities.</h2>
         </div>
-        <div class="doctors doctors-featured">
-          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/shimelis-legesse.jpg"><span class="doc-badge">CEO</span><span class="avatar has-photo"><span class="initials" aria-hidden="true">SL</span><img src="assets/doctors/shimelis-legesse.jpg" alt="Dr Shimelis Legesse" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Legesse</h3><p>Internist &amp; CEO</p></article>
-          <article class="doc reveal" data-cat="mch" data-photo="assets/doctors/jalel-hundesa.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">JH</span><img src="assets/doctors/jalel-hundesa.jpg" alt="Dr Jalel Hundesa" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Jalel Hundesa</h3><p>Obstetrician &amp; Gynecologist</p></article>
-          <article class="doc reveal" data-cat="mch" data-photo="assets/doctors/selam-bisrat.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SB</span><img src="assets/doctors/selam-bisrat.jpg" alt="Dr Selam Bisrat" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Selam Bisrat</h3><p>Pediatrician</p></article>
-          <article class="doc reveal" data-cat="medicine" data-photo="assets/doctors/adugna-fekadu.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">AF</span><img src="assets/doctors/adugna-fekadu.jpg" alt="Dr Adugna Fekadu" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Adugna Fekadu</h3><p>Consultant Oncologist</p></article>
-          <article class="doc reveal" data-cat="surgery" data-photo="assets/doctors/shimelis-nigussie.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">SN</span><img src="assets/doctors/shimelis-nigussie.jpg" alt="Dr Shimelis Nigussie" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Nigussie</h3><p>Hepatobiliary Surgeon</p></article>
-          <article class="doc reveal" data-cat="diagnostics" data-photo="assets/doctors/netsanet-abraham.jpg"><span class="avatar has-photo"><span class="initials" aria-hidden="true">NA</span><img src="assets/doctors/netsanet-abraham.jpg" alt="Dr Netsanet Abraham" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Netsanet Abraham</h3><p>Radiologist</p></article>
+        <div class="services services-3">
+          <div class="service reveal"><svg><use href="#i-physio"/></svg><span>Physiotherapy</span></div>
+          <div class="service reveal"><svg><use href="#i-apple"/></svg><span>Nutrition &amp; Dietary</span></div>
+          <div class="service reveal"><svg><use href="#i-drop"/></svg><span>Blood Bank</span></div>
+          <div class="service reveal"><svg><use href="#i-syringe"/></svg><span>Vaccination</span></div>
+          <div class="service reveal"><svg><use href="#i-family"/></svg><span>Family Planning</span></div>
+          <div class="service reveal"><svg><use href="#i-steth"/></svg><span>Subspecialty Clinics</span></div>
+          <div class="service reveal"><svg><use href="#i-shield"/></svg><span>Security &amp; Fire Safety</span></div>
+          <div class="service reveal"><svg><use href="#i-laundry"/></svg><span>Laundry</span></div>
+          <div class="service reveal"><svg><use href="#i-card"/></svg><span>Cashless Payment</span></div>
         </div>
-        <div class="view-all-row reveal"><a class="view-all" href="doctors.html">View all 26 doctors <svg class="ico"><use href="#i-arrow"/></svg></a></div>
       </div>
     </section>
 
