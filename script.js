@@ -1,0 +1,153 @@
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Footer year
+  $("#year").textContent = new Date().getFullYear();
+
+  // Sticky nav background
+  const nav = $("#nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 10);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Mobile menu
+  const burger = $("#burger");
+  const menu = $("#menu");
+  const setMenu = (open) => {
+    menu.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  };
+  burger.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+  $$("a", menu).forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => e.key === "Escape" && setMenu(false));
+
+  // Active nav link per section
+  const links = $$('.menu a[href^="#"]:not(.btn)');
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((l) => l.classList.toggle("active", l.getAttribute("href") === "#" + entry.target.id));
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px" }
+  );
+  links.forEach((l) => {
+    const target = $(l.getAttribute("href"));
+    if (target) sectionObserver.observe(target);
+  });
+
+  // Reveal on scroll, staggered within each parent
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("in");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  $$(".reveal").forEach((el) => {
+    const siblings = $$(":scope > .reveal", el.parentElement);
+    el.style.setProperty("--d", `${Math.min(siblings.indexOf(el), 8) * 0.06}s`);
+    revealObserver.observe(el);
+  });
+
+  // Count-up stats
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const end = Number(el.dataset.count);
+      const suffix = el.dataset.suffix || "";
+      countObserver.unobserve(el);
+      if (reduceMotion) { el.textContent = end + suffix; return; }
+      const start = performance.now();
+      const dur = 1400;
+      const tick = (now) => {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.5 });
+  $$("[data-count]").forEach((el) => countObserver.observe(el));
+
+  // Card tilt + spotlight (pointer devices only)
+  if (!reduceMotion && window.matchMedia("(hover: hover)").matches) {
+    $$(".tilt").forEach((card) => {
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width;
+        const y = (e.clientY - r.top) / r.height;
+        card.style.setProperty("--mx", `${x * 100}%`);
+        card.style.setProperty("--my", `${y * 100}%`);
+        card.style.transform = `perspective(800px) rotateX(${(0.5 - y) * 8}deg) rotateY(${(x - 0.5) * 8}deg) translateY(-4px)`;
+      });
+      card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+    });
+  }
+
+  // Doctor filters
+  const filters = $$(".filter");
+  filters.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      filters.forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle("active", on);
+        b.setAttribute("aria-selected", String(on));
+      });
+      const f = btn.dataset.filter;
+      $$(".doc").forEach((d) => d.classList.toggle("hidden", f !== "all" && d.dataset.cat !== f));
+    })
+  );
+
+  // Package links prefill the appointment form
+  const deptSelect = $("#deptSelect");
+  $$(".pkg").forEach((p) => p.addEventListener("click", () => { deptSelect.value = p.dataset.pkg; }));
+
+  // Open / closed badge (Addis Ababa time, UTC+3)
+  const badge = $("#openBadge");
+  const now = new Date(Date.now() + (new Date().getTimezoneOffset() + 180) * 60000);
+  const day = now.getDay();
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const open = (day >= 1 && day <= 5 && mins >= 480 && mins < 1020) || (day === 6 && mins >= 480 && mins < 780);
+  badge.textContent = open ? "Open now" : "Clinic closed · ER open";
+  badge.className = "open-badge " + (open ? "open" : "closed");
+
+  // Appointment form → opens the user's email app with a prefilled request
+  const form = $("#apptForm");
+  const note = $("#formNote");
+  const dateInput = form.elements.date;
+  dateInput.min = new Date().toISOString().slice(0, 10);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let valid = true;
+    ["name", "phone", "dept", "date"].forEach((n) => {
+      const field = form.elements[n];
+      const bad = !field.value.trim();
+      field.classList.toggle("invalid", bad);
+      if (bad) valid = false;
+    });
+    if (!valid) {
+      note.textContent = "Please fill in the highlighted fields.";
+      note.className = "form-note err";
+      return;
+    }
+    const d = Object.fromEntries(new FormData(form));
+    const body = `Name: ${d.name}\nPhone: ${d.phone}\nSpecialty / package: ${d.dept}\nPreferred date: ${d.date}\n\n${d.msg || ""}`;
+    window.location.href =
+      "mailto:info@lubuspecializedcenter.com" +
+      `?subject=${encodeURIComponent("Appointment request – " + d.dept)}` +
+      `&body=${encodeURIComponent(body)}`;
+    note.textContent = "Your email app should open with the request ready to send. We'll confirm by phone.";
+    note.className = "form-note ok";
+  });
+  $$("input, select", form).forEach((f) => f.addEventListener("input", () => f.classList.remove("invalid")));
+})();

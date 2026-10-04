@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUBBU Specialized Medical & MCH Center</title>
+  <meta name="description" content="LUBBU – tertiary-level, multi-specialty medical and maternal & child health center in Saris Adey Abeba, Addis Ababa. 24/7 emergency, labor & delivery, NICU and 20+ specialists." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.3C1.1 8.3 3.3 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.7 0 5.9 3.8 4.5 7.2C19.5 16.4 12 21 12 21z"/></symbol>
+      <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M6 3H4m2 0h2m8 0h-2m2 0h2M11 14v2a5 5 0 0 0 10 0v-2"/><circle cx="21" cy="12" r="2"/></symbol>
+      <symbol id="i-baby" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M10 8h.01M14 8h.01M10.5 10.5c.8.6 2.2.6 3 0M5 21c1-3.5 3.8-6 7-6s6 2.5 7 6"/></symbol>
+      <symbol id="i-woman" viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><path d="M12 9c-3 0-5 2.5-5 6h3l1 6h2l1-6h3c0-3.5-2-6-5-6z"/></symbol>
+      <symbol id="i-scalpel" viewBox="0 0 24 24"><path d="M3 21l9-9M12 12l7.5-7.5a2.1 2.1 0 0 1 3 3L15 15l-3-3zM3 21h6"/></symbol>
+      <symbol id="i-cell" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12h4l3-7 4 14 3-7h6"/></symbol>
+      <symbol id="i-lungs" viewBox="0 0 24 24"><path d="M12 3v9M12 12l-3 2M12 12l3 2M8.5 7C5 7 3 13 3 17c0 2 1 3 3 3 3 0 4-2 4-5V9.5M15.5 7C19 7 21 13 21 17c0 2-1 3-3 3-3 0-4-2-4-5V9.5"/></symbol>
+      <symbol id="i-siren" viewBox="0 0 24 24"><path d="M6 18v-6a6 6 0 0 1 12 0v6M4 18h16v3H4zM12 2v2M4.2 5.2l1.4 1.4M19.8 5.2l-1.4 1.4"/></symbol>
+      <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 20V6M2 16h20v4M22 16v-4a3 3 0 0 0-3-3h-8v7"/><circle cx="6.5" cy="11.5" r="2"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5S5 10 5 15a7 7 0 0 0 14 0c0-5-7-12.5-7-12.5z"/><path d="M9 15a3 3 0 0 0 3 3"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2h6M10 2v6L4 19a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 19l-6-11V2M7 15h10"/></symbol>
+      <symbol id="i-pill" viewBox="0 0 24 24"><rect x="2.5" y="8" width="19" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M8.5 8.5l7 7"/></symbol>
+      <symbol id="i-incubator" viewBox="0 0 24 24"><path d="M3 14h18v4H3zM5 14V9a7 5 0 0 1 14 0v5M6 18v3M18 18v3"/><circle cx="12" cy="11" r="1.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s8-6.5 8-13a8 8 0 0 0-16 0c0 6.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- Emergency bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="live"><span class="dot"></span>Emergency open 24/7</span>
+      <a href="tel:0906000111"><svg class="ico"><use href="#i-phone"/></svg>0906 000 111 / 222 / 333</a>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="LUBBU Medical &amp; MCH Center — home">
+        <img src="assets/logo.png" alt="LUBBU Medical &amp; MCH Center" width="72" height="60" />
+      </a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+        <a href="#appointment" class="btn btn-sm btn-primary menu-cta">Book appointment</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="chip reveal">Tertiary-level · Multi-specialty · Addis Ababa</span>
+          <h1 class="reveal">We care for the <span class="grad">whole family.</span></h1>
+          <p class="lead reveal">Wellness and healing, close to home. At LUBBU you're more than a patient — you're a person, a neighbor and a friend. Expert care for everyone planning, starting and raising a family.</p>
+          <div class="hero-actions reveal">
+            <a href="#appointment" class="btn btn-primary">Book an appointment <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a href="tel:0906000111" class="btn btn-ghost"><svg class="ico"><use href="#i-siren"/></svg> Emergency line</a>
+          </div>
+          <ul class="stats reveal">
+            <li><strong data-count="20" data-suffix="+">0</strong><span>Specialists &amp; subspecialists</span></li>
+            <li><strong>24/7</strong><span>Emergency &amp; delivery</span></li>
+            <li><strong data-count="8">0</strong><span>Medical specialties</span></li>
+            <li><strong data-count="2">0</strong><span>Operating theatres</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="core">
+            <svg class="core-heart"><use href="#i-heart"/></svg>
+          </div>
+          <div class="float-card fc-1">
+            <span class="fc-ico"><svg><use href="#i-pulse"/></svg></span>
+            <div><b>Vitals monitoring</b><small>Live · ICU &amp; NICU</small></div>
+          </div>
+          <div class="float-card fc-2">
+            <span class="fc-ico"><svg><use href="#i-baby"/></svg></span>
+            <div><b>Painless delivery</b><small>Dedicated C-section OT</small></div>
+          </div>
+          <div class="float-card fc-3">
+            <span class="fc-ico"><svg><use href="#i-shield"/></svg></span>
+            <div><b>Affordable care</b><small>Packages &amp; discounts</small></div>
+          </div>
+          <svg class="ecg" viewBox="0 0 600 120" preserveAspectRatio="none">
+            <path d="M0 60 H160 L180 60 L195 30 L210 95 L228 10 L246 108 L262 60 H360 L375 48 L390 60 H600" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
+        <span>Emergency Care</span><span>Labor &amp; Delivery</span><span>Neonatal ICU</span><span>Operation Theatre</span><span>Blood Bank</span><span>Laboratory</span><span>Pharmacy</span><span>Chemotherapy</span><span>Inpatient Care</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <span class="eyebrow">About LUBBU</span>
+          <h2>Specialist care, founded by specialists.</h2>
+          <p>LUBBU is a multi-specialty medical center that brings maternal &amp; child health together with internal medicine under one roof. Founded by experienced specialist doctors, we deliver tertiary-level outpatient and inpatient care — at an affordable cost, with innovative packages and discounts.</p>
+          <ul class="checks">
+            <li><svg class="ico"><use href="#i-check"/></svg>State-of-the-art diagnostic &amp; treatment equipment</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Two fully equipped operating theatres — one dedicated to C-sections</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Painless delivery, Neonatal ICU and chemotherapy services</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>A safe, clean and modern environment</li>
+          </ul>
+        </div>
+        <div class="mv">
+          <article class="glass mv-card reveal">
+            <span class="eyebrow">Vision</span>
+            <p class="big">To be the first choice for excellent health care services.</p>
+          </article>
+          <article class="glass mv-card reveal">
+            <span class="eyebrow">Mission</span>
+            <p class="big">Improving the health and well-being of individuals, families and our community through innovation and pursuit of excellence.</p>
+          </article>
+          <div class="values reveal">
+            <span>Compassion</span><span>Confidentiality</span><span>Integrity</span><span>Teamwork</span><span>Innovation</span><span>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALTIES -->
+    <section class="section" id="specialties">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our specialties</span>
+          <h2>Eight disciplines. One connected team.</h2>
+          <p>Consultants and subspecialists working side by side, so every referral stays in the building.</p>
+        </div>
+        <div class="cards cards-4">
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-steth"/></svg></span><h3>Internal Medicine</h3><p>Diagnosis and long-term management of adult illness.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-woman"/></svg></span><h3>Obstetrics &amp; Gynecology</h3><p>Women's health from adolescence through pregnancy and beyond.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-baby"/></svg></span><h3>Pediatrics &amp; Neonatology</h3><p>Care for newborns, infants and children as they grow.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-heart"/></svg></span><h3>Maternal-Fetal Medicine</h3><p>Specialist support for high-risk pregnancies.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-scalpel"/></svg></span><h3>General Surgery</h3><p>Elective and emergency procedures in modern theatres.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-cell"/></svg></span><h3>Oncology</h3><p>Cancer screening, treatment planning and chemotherapy.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-pulse"/></svg></span><h3>Cardiology</h3><p>Heart health assessment, diagnosis and follow-up.</p></article>
+          <article class="card tilt reveal"><span class="card-ico"><svg><use href="#i-lungs"/></svg></span><h3>Pulmonology</h3><p>Respiratory and lung condition care.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="section section-alt" id="doctors">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our doctors</span>
+          <h2>Meet the specialists behind your care.</h2>
+          <p>Consultants, subspecialists and general practitioners — 26 doctors working as one team.</p>
+        </div>
+        <div class="filters reveal" role="tablist" aria-label="Filter doctors">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="medicine" role="tab" aria-selected="false">Internal medicine</button>
+          <button class="filter" data-filter="mch" role="tab" aria-selected="false">Mother &amp; child</button>
+          <button class="filter" data-filter="surgery" role="tab" aria-selected="false">Surgery &amp; anesthesia</button>
+          <button class="filter" data-filter="diagnostics" role="tab" aria-selected="false">Diagnostics</button>
+          <button class="filter" data-filter="general" role="tab" aria-selected="false">General practice</button>
+        </div>
+        <div class="doctors">
+          <article class="doc reveal" data-cat="medicine"><span class="doc-badge">CEO</span><span class="avatar has-photo"><img src="assets/doctors/shimelis-legesse.jpg" alt="Dr Shimelis Legesse" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Legesse</h3><p>Internist &amp; CEO</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar" aria-hidden="true">TS</span><h3>Dr Tigist Sileshi</h3><p>Internist – Cardiologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar" aria-hidden="true">DT</span><h3>Dr Demu Tesfaye</h3><p>Consultant Internist &amp; Cardiologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar" aria-hidden="true">LG</span><h3>Dr Lalise Gemachu</h3><p>Internist – Hematologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar" aria-hidden="true">LB</span><h3>Dr Limi Basha</h3><p>Internist, Diabetes &amp; Endocrinologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar has-photo"><img src="assets/doctors/adugna-fekadu.jpg" alt="Dr Adugna Fekadu" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Adugna Fekadu</h3><p>Consultant Oncologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar" aria-hidden="true">DM</span><h3>Dr Dereje Melka</h3><p>Neurologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar has-photo"><img src="assets/doctors/lishan-demera.jpg" alt="Dr Lishan Demera" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Lishan Demera</h3><p>Dermato-Venereologist</p></article>
+          <article class="doc reveal" data-cat="medicine"><span class="avatar has-photo"><img src="assets/doctors/selam-nigussie.jpg" alt="Dr Selam Nigussie" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Selam Nigussie</h3><p>Psychiatrist</p></article>
+          <article class="doc reveal" data-cat="mch"><span class="avatar has-photo"><img src="assets/doctors/jalel-hundesa.jpg" alt="Dr Jalel Hundesa" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Jalel Hundesa</h3><p>Obstetrician &amp; Gynecologist</p></article>
+          <article class="doc reveal" data-cat="mch"><span class="avatar has-photo"><img src="assets/doctors/selam-bisrat.jpg" alt="Dr Selam Bisrat" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Selam Bisrat</h3><p>Pediatrician</p></article>
+          <article class="doc reveal" data-cat="mch"><span class="avatar has-photo"><img src="assets/doctors/abenezer-chala.jpg" alt="Dr Abenezer Chala" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Abenezer Chala</h3><p>Pediatrician</p></article>
+          <article class="doc reveal" data-cat="surgery"><span class="avatar has-photo"><img src="assets/doctors/shimelis-nigussie.jpg" alt="Dr Shimelis Nigussie" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Shimelis Nigussie</h3><p>Hepatobiliary Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery"><span class="avatar has-photo"><img src="assets/doctors/elsa-daniel.jpg" alt="Dr Elsa Daniel" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Elsa Daniel</h3><p>Orthopedic Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery"><span class="avatar has-photo"><img src="assets/doctors/mizen-yeshaw.jpg" alt="Dr Mizen Yeshaw" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Mizen Yeshaw</h3><p>ENT Surgeon</p></article>
+          <article class="doc reveal" data-cat="surgery"><span class="avatar has-photo"><img src="assets/doctors/seyfe-bekele.jpg" alt="Dr Seyfe Bekele" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Seyfe Bekele</h3><p>Urologist</p></article>
+          <article class="doc reveal" data-cat="surgery"><span class="avatar" aria-hidden="true">MA</span><h3>Dr Muna Abera</h3><p>Anesthesiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar has-photo"><img src="assets/doctors/netsanet-abraham.jpg" alt="Dr Netsanet Abraham" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Netsanet Abraham</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar has-photo"><img src="assets/doctors/andargachew-kaleab.jpg" alt="Dr Andargachew Kaleab" width="180" height="180" loading="lazy" decoding="async" /></span><h3>Dr Andargachew Kaleab</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar" aria-hidden="true">ET</span><h3>Dr Etenesh Tewelde</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar" aria-hidden="true">AN</span><h3>Dr Alexander Napoleon</h3><p>Radiologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar" aria-hidden="true">TJ</span><h3>Dr Taye Jemberu</h3><p>Pathologist</p></article>
+          <article class="doc reveal" data-cat="diagnostics"><span class="avatar" aria-hidden="true">TY</span><h3>Dr Tewodros Yalew</h3><p>Pathologist</p></article>
+          <article class="doc reveal" data-cat="general"><span class="avatar" aria-hidden="true">BA</span><h3>Dr Bemnet Alemu</h3><p>General Practitioner</p></article>
+          <article class="doc reveal" data-cat="general"><span class="avatar" aria-hidden="true">KG</span><h3>Dr Kaleb Getaneh</h3><p>General Practitioner</p></article>
+          <article class="doc reveal" data-cat="general"><span class="avatar" aria-hidden="true">HT</span><h3>Dr Habtamu Tamiru</h3><p>General Practitioner</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services · around the clock</span>
+          <h2>Open when you need us. <span class="grad">24/7.</span></h2>
+        </div>
+        <div class="services">
+          <div class="service reveal"><svg><use href="#i-siren"/></svg><span>Emergency Care</span></div>
+          <div class="service reveal"><svg><use href="#i-baby"/></svg><span>Labor &amp; Delivery</span></div>
+          <div class="service reveal"><svg><use href="#i-scalpel"/></svg><span>Operation Theatre</span></div>
+          <div class="service reveal"><svg><use href="#i-incubator"/></svg><span>Neonatal ICU</span></div>
+          <div class="service reveal"><svg><use href="#i-bed"/></svg><span>Inpatient Care</span></div>
+          <div class="service reveal"><svg><use href="#i-drop"/></svg><span>Blood Bank</span></div>
+          <div class="service reveal"><svg><use href="#i-flask"/></svg><span>Laboratory</span></div>
+          <div class="service reveal"><svg><use href="#i-pill"/></svg><span>Pharmacy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section section-alt" id="packages">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Special packages</span>
+          <h2>Check-ups built around your life stage.</h2>
+          <p>Bundled tests and consultations at a better price. Ask our front desk for current package details.</p>
+        </div>
+        <div class="packages">
+          <a href="#appointment" class="pkg reveal" data-pkg="Annual Health Checkup"><span class="pkg-n">01</span><h3>Annual Health Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Cancer Screening"><span class="pkg-n">02</span><h3>Cancer Screening</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Cardiac Health Checkup"><span class="pkg-n">03</span><h3>Cardiac Health Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Diabetic Checkup"><span class="pkg-n">04</span><h3>Diabetic Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Well-Women Checkup"><span class="pkg-n">05</span><h3>Well-Women Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Pre-Marital Checkup"><span class="pkg-n">06</span><h3>Pre-Marital Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Pre-Conception Checkup"><span class="pkg-n">07</span><h3>Pre-Conception Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="#appointment" class="pkg reveal" data-pkg="Kids Health Checkup"><span class="pkg-n">08</span><h3>Kids Health Checkup</h3><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT + CONTACT -->
+    <section class="section" id="appointment">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="glass form-card reveal">
+            <span class="eyebrow">Book an appointment</span>
+            <h2>Reserve your visit.</h2>
+            <form id="apptForm" novalidate>
+              <div class="row">
+                <label><span class="lbl">Full name</span><input name="name" required autocomplete="name" placeholder="Your name" /></label>
+                <label><span class="lbl">Phone</span><input name="phone" type="tel" required autocomplete="tel" placeholder="09xx xxx xxx" /></label>
+              </div>
+              <div class="row">
+                <label><span class="lbl">Specialty / package</span>
+                  <select name="dept" id="deptSelect" required>
+                    <option value="">Select…</option>
+                    <optgroup label="Specialties">
+                      <option>Internal Medicine</option><option>Obstetrics &amp; Gynecology</option><option>Pediatrics &amp; Neonatology</option><option>Maternal-Fetal Medicine</option><option>General Surgery</option><option>Oncology</option><option>Cardiology</option><option>Pulmonology</option>
+                    </optgroup>
+                    <optgroup label="Packages">
+                      <option>Annual Health Checkup</option><option>Cancer Screening</option><option>Cardiac Health Checkup</option><option>Diabetic Checkup</option><option>Well-Women Checkup</option><option>Pre-Marital Checkup</option><option>Pre-Conception Checkup</option><option>Kids Health Checkup</option>
+                    </optgroup>
+                  </select>
+                </label>
+                <label><span class="lbl">Preferred date</span><input name="date" type="date" required /></label>
+              </div>
+              <label><span class="lbl">Message <span class="opt">(optional)</span></span><textarea name="msg" rows="4" placeholder="Anything we should know?"></textarea></label>
+              <button class="btn btn-primary btn-block" type="submit">Send request <svg class="ico"><use href="#i-arrow"/></svg></button>
+              <p class="form-note" id="formNote" role="status">For emergencies, call us directly — don't wait for a reply.</p>
+            </form>
+          </div>
+
+          <aside class="glass contact-card reveal" id="contact">
+            <span class="eyebrow">Contact</span>
+            <h2>Get in touch.</h2>
+            <ul class="contact-list">
+              <li>
+                <span class="info-ico"><svg><use href="#i-phone"/></svg></span>
+                <div><small>Call us</small><span><a href="tel:0906000111">0906&nbsp;000&nbsp;111</a> · <a href="tel:0906000222">222</a> · <a href="tel:0906000333">333</a></span></div>
+              </li>
+              <li>
+                <span class="info-ico"><svg><use href="#i-mail"/></svg></span>
+                <div><small>Email</small><a href="mailto:info@lubuspecializedcenter.com">info@lubuspecializedcenter.com</a></div>
+              </li>
+              <li>
+                <span class="info-ico"><svg><use href="#i-pin"/></svg></span>
+                <div><small>Visit</small><span>Saris Adey Abeba, beside Red Cross Training Center, 200&nbsp;m from Adey Abeba railway crossing</span></div>
+              </li>
+              <li class="hours">
+                <span class="info-ico"><svg><use href="#i-clock"/></svg></span>
+                <div>
+                  <small>Opening hours <span class="open-badge" id="openBadge"></span></small>
+                  <dl>
+                    <dt>Mon – Fri</dt><dd>08:00 – 17:00</dd>
+                    <dt>Saturday</dt><dd>08:00 – 13:00</dd>
+                    <dt>Sunday</dt><dd>Emergency only</dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+            <a class="er-strip" href="tel:0906000111">
+              <svg class="ico"><use href="#i-siren"/></svg>
+              <span><b>Emergency 24/7</b> Call 0906 000 111</span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </a>
+          </aside>
+        </div>
+
+        <div class="map reveal">
+          <iframe title="Map showing LUBBU Specialized Medical &amp; MCH Center" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://maps.google.com/maps?q=Lubbu%20Specialized%20Medical%20%26%20MCH%20Center&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near"></iframe>
+          <a class="map-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Lubbu%20Specialized%20Medical%20%26%20MCH%20Center" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-pin"/></svg> Get directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <figure class="cta-photo">
+            <img src="assets/photos/reception.jpg" alt="Two LUBBU doctors smiling at the reception desk" width="1241" height="750" loading="lazy" decoding="async" />
+          </figure>
+          <div class="cta-panel">
+            <h2>Your family's health, in expert hands.</h2>
+            <p>Walk in, call ahead, or book online — we're here every hour of every day for emergencies.</p>
+            <div class="hero-actions">
+              <a href="#appointment" class="btn btn-light">Book appointment</a>
+              <a href="tel:0906000111" class="btn btn-outline-light">Call 0906 000 111</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand brand-footer">
+          <img src="assets/logo.png" alt="LUBBU Medical &amp; MCH Center" width="120" height="100" />
+        </a>
+        <p class="muted">Bringing wellness and healing close to home.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#about">About</a><a href="#specialties">Specialties</a><a href="#services">Services</a><a href="#packages">Packages</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:0906000111">0906 000 111</a><a href="mailto:info@lubuspecializedcenter.com">info@lubuspecializedcenter.com</a><span class="muted">Saris Adey Abeba, Addis Ababa</span>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="Telegram">Telegram</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> LUBBU Specialized Medical &amp; MCH Center</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
