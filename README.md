@@ -1,4 +1,4 @@
-# LUBBU Specialized Medical & MCH Center — website redesign
+# LUBBU Specialized Medical & MCH Center: website redesign
 
 A redesigned, mobile-friendly website for LUBBU Specialized Medical & MCH Center, Saris Adey Abeba, Addis Ababa.
 
